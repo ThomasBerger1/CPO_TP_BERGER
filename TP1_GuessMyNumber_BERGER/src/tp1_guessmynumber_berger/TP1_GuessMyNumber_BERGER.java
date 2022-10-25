@@ -25,27 +25,38 @@ public class TP1_GuessMyNumber_BERGER {
         Scanner sc = new Scanner (System.in);
         double saisi = -1;
         int nbrT = 0;
+        int nbrC = 9999;
         
         int mode = selectmode();
         
         switch(mode){
             
             case 1: //Facile
+                
             case 2: //Moyen 
+                nbrC = 10;
             case 3: //Difficile
+                nbrC = 7;
             case 4: //Cauchemard
+                nbrC = 5;
         }
         
-        while(!(saisi == rand)){
+        while(!(saisi == rand) && !(nbrT == nbrC)){
             
+            System.out.println("Entrez un entier :");
             saisi = sc.nextInt();
             nbrT += 1; 
             if(saisi < rand){
                 System.out.println("Trop petit! \nNombre de tentatives : "+nbrT);
             }else if(saisi > rand){
                 System.out.println("Trop grand! \nNombre de tentatives : "+nbrT);
-            }else{
+            }else if(saisi == rand){
                 System.out.println("Bravo ! Gagné ! Le numéro était bien "+rand +"\nNombre de tentatives : "+nbrT);
+                break;
+            }
+            
+            if(nbrT == nbrC){
+                System.out.println("Perdu! Nombre de tentative atteint. Le numéro était "+rand);
                 break;
             }
             
