@@ -26,19 +26,25 @@ public class TP1_GuessMyNumber_BERGER {
         double saisi = -1;
         int nbrT = 0;
         int nbrC = 9999;
-        
+        String msgPetit = "Trop Petit";
+        String msgGrand = "Trop Grand";
         int mode = selectmode();
         
         switch(mode){
             
             case 1: //Facile
-                
+                msgPetit = "Vraiment " + msgPetit;
+                msgGrand = "Vraiment " + msgGrand;
+                break;
             case 2: //Moyen 
                 nbrC = 10;
+                break;
             case 3: //Difficile
                 nbrC = 7;
+                break;
             case 4: //Cauchemard
                 nbrC = 5;
+                break;
         }
         
         while(!(saisi == rand) && !(nbrT == nbrC)){
@@ -47,9 +53,9 @@ public class TP1_GuessMyNumber_BERGER {
             saisi = sc.nextInt();
             nbrT += 1; 
             if(saisi < rand){
-                System.out.println("Trop petit! \nNombre de tentatives : "+nbrT);
+                System.out.println(msgPetit+"\nNombre de tentatives : "+nbrT);
             }else if(saisi > rand){
-                System.out.println("Trop grand! \nNombre de tentatives : "+nbrT);
+                System.out.println(msgGrand+"\nNombre de tentatives : "+nbrT);
             }else if(saisi == rand){
                 System.out.println("Bravo ! Gagné ! Le numéro était bien "+rand +"\nNombre de tentatives : "+nbrT);
                 break;
