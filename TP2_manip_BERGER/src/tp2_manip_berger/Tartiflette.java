@@ -8,16 +8,16 @@ package tp2_manip_berger;
  *
  * @author berge
  */
-public class Tartiflette {
+public class Tartiflette { //Définition de la classe 
     int nbCalories;
     
     
-    public Tartiflette(int Cal){
+    public Tartiflette(int Cal){ //définition du construct
         nbCalories = Cal;
     }
     
     @Override
-public String toString () {
+public String toString () { //Définition de l'écriture 
  return "La tartiflette fait "+nbCalories+" calories";
 }
    

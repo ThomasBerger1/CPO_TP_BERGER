@@ -8,15 +8,15 @@ package tp2_manip_berger;
  *
  * @author berge
  */
-public class Moussaka {
+public class Moussaka { //définition de la classe
     int nbCalories;
     
-    public Moussaka(int Cal){
+    public Moussaka(int Cal){ //définition du construct 
         nbCalories = Cal;
     }
     
     
-@Override
+@Override //Définition de l'écriture voulu quand on appelle un objet Moussaka
 public String toString () {
  return "La moussaka fait "+nbCalories+" calories";
 }
