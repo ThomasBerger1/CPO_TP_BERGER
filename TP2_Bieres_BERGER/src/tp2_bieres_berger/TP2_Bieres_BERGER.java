@@ -30,6 +30,33 @@ public class TP2_Bieres_BERGER {
         BouteilleBiere cBiere = new BouteilleBiere("Guinness",4.2,"St. James's Gate");
         cBiere.lireEtiquette();
         
+        boolean ouvert = uneBiere.Décapsuler();
+        if (ouvert == false){
+            System.out.println("Erreur : La bière est déjà ouverte.");
+        }else{
+            System.out.println("La bière "+ uneBiere.nom +" est maintenant décapsulée.");
+        }
+        
+        boolean ouvert2 = tBiere.Décapsuler();
+        if (ouvert2 == false){
+            System.out.println("Erreur : La bière est déjà ouverte.");
+        }else{
+            System.out.println("La bière "+ tBiere.nom +" est maintenant décapsulée.");
+        }
+        
+        boolean ouvert3 = qBiere.Décapsuler();
+        if (ouvert3 == false){
+            System.out.println("Erreur : La bière est déjà ouverte.");
+        }else{
+            System.out.println("La bière "+ qBiere.nom +" est maintenant décapsulée.");
+        }
+        
+        System.out.println(uneBiere);
+        System.out.println(sBiere);
+        System.out.println(tBiere);
+        System.out.println(qBiere);
+        System.out.println(cBiere);
+        
     }
     
 }
