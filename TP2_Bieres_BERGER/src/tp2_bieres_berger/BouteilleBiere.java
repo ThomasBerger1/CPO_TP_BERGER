@@ -8,24 +8,24 @@ package tp2_bieres_berger;
  *
  * @author berge
  */
-public class BouteilleBiere {
+public class BouteilleBiere { //définition de la classe bière 
     String nom;
     double degreAlcool;
     String brasserie;
     boolean ouverte = false;
 
-    public void lireEtiquette(){
+    public void lireEtiquette(){ //Définition de la méthode permettant de lire l'étiquette d'un objet de cette classe 
         System.out.println("Bouteille de " + nom +" (" + degreAlcool +" degres) \nBrasserie : " + brasserie ) ;
     }
     
-    public BouteilleBiere(String unNom, double unDegre, String uneBrasserie){
+    public BouteilleBiere(String unNom, double unDegre, String uneBrasserie){ //défnition du construc
         nom = unNom;
         degreAlcool = unDegre;
         brasserie = uneBrasserie;
         ouverte = false;
     }
     
-    public boolean Décapsuler(){
+    public boolean Décapsuler(){ //Méthode Décapsuler pour savoir si une bière est ouverte ou fermée. 
        if (ouverte == false){  
            ouverte = true;
            return true;
@@ -35,7 +35,7 @@ public class BouteilleBiere {
        }
     
     @Override
-    public String toString(){
+    public String toString(){ //définition de l'écriture voulue
         String chaine_a_retourner;
         chaine_a_retourner = nom + " (" + degreAlcool + " degrés) Ouverte ? "; 
         if (ouverte == true ) chaine_a_retourner += "oui" ;
