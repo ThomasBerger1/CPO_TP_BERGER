@@ -9,5 +9,23 @@ package tp2_manip_berger;
  * @author berge
  */
 public class Tartiflette {
+    int nbCalories;
+    
+    
+    public Tartiflette(int Cal){
+        nbCalories = Cal;
+    }
+    
+    @Override
+public String toString () {
+ return "La tartiflette fait "+nbCalories+" calories";
+}
+   
+    
+    
+    
+    
+    
+    
     
 }

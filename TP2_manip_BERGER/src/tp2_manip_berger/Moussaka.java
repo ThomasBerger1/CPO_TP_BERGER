@@ -9,5 +9,30 @@ package tp2_manip_berger;
  * @author berge
  */
 public class Moussaka {
+    int nbCalories;
+    
+    public Moussaka(int Cal){
+        nbCalories = Cal;
+    }
+    
+    
+@Override
+public String toString () {
+ return "La moussaka fait "+nbCalories+" calories";
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 }
