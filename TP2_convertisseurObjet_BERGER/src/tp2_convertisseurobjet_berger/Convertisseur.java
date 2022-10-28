@@ -20,7 +20,7 @@ public Convertisseur () {
 
 @Override
 public String toString () {
- return "nb de conversions"+ nbConversions;
+ return "Vous avez fait " + nbConversions + " conversion(s)";
 }
 
 public double CelciusVersKelvin(double celcius){ //Méthode de la convertion des Celcius vers des Kelvin, avec un paramètre en entrée 
@@ -98,6 +98,7 @@ public double CelciusVersKelvin(double celcius){ //Méthode de la convertion des
 
             }
 
+            nbConversions += 1;
             return mode; //On retourne de cette méthode un entier correspondant ensuite aux différents cas 
 
         }

@@ -66,11 +66,8 @@ public class TP2_convertisseurObjet_BERGER {
         
         System.out.println("La température de " + t + entry + " correspond à " + res + " " + output);
         
-        
-        
-        
-        
-        
+        System.out.println(convert);
+
     }
     
 }
