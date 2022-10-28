@@ -15,18 +15,18 @@ public class TP2_relation_1_BERGER {
      */
     public static void main(String[] args) {
         
-        Voiture uneClio = new Voiture ("Clio", "Renault", 5 ) ;
+        Voiture uneClio = new Voiture ("Clio", "Renault", 5 ) ; //On crée un nouvel objet : V0oiture.
         Voiture uneAutreClio = new Voiture ("Clio", "Renault", 5 ) ;
         Voiture une2008 = new Voiture ("2008", "Peugeot", 6 ) ;
         Voiture uneMicra = new Voiture ("Micra", "Nissan", 4 ) ;
         Voiture uneGolf = new Voiture("Golf","Volfswagen",115);
-        Personne bob = new Personne("Bobby", "Sixkiller");
+        Personne bob = new Personne("Bobby", "Sixkiller"); //on crée un nouvel objet : Personne.
         Personne reno = new Personne("Reno", "Raines");
         System.out.println("liste des voitures disponibles :\n"+ uneClio + "\n" + uneAutreClio + "\n" + une2008 + "\n" + uneMicra ) ;
 
-        bob.liste_voitures[0] = uneClio ;
-        bob.nbVoitures = 1 ;
-        uneClio.proprietaire = bob ;
+        bob.liste_voitures[0] = uneClio ; //On affecte à la personne bob une nouvelle voiture
+        bob.nbVoitures = 1 ; //Il a donc maintenant 1 voiture
+        uneClio.proprietaire = bob ; //La clio a pour proprietaire bob 
         
         System.out.println("La premiere voiture de Bob est "+ bob.liste_voitures[0]);
         
@@ -44,7 +44,7 @@ public class TP2_relation_1_BERGER {
         
         System.out.println(bob +"\n"+ reno);
         
-        bob.ajouter_voiture(uneMicra);
+        bob.ajouter_voiture(uneMicra); //On utlise la méthode ajouter_voiture
         reno.ajouter_voiture(uneGolf);
         
     }
