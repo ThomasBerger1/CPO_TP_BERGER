@@ -17,7 +17,7 @@ public class TP2_convertisseurObjet_BERGER {
      */
     public static void main(String[] args) {
         
-        Convertisseur convert = new Convertisseur();
+        Convertisseur convert = new Convertisseur(); //on créé un nouvel objet
         
         Scanner sc = new Scanner(System.in); //Création d'un scanner 
         System.out.println("Saisissez une valeur : "); //Affichage de consigne
@@ -66,7 +66,7 @@ public class TP2_convertisseurObjet_BERGER {
         
         System.out.println("La température de " + t + entry + " correspond à " + res + " " + output);
         
-        System.out.println(convert);
+        System.out.println(convert); //On print le nombre de conversions (ce qu'on veut faire apparaitre grâce à la définition de l'écriture (toString)
 
     }
     

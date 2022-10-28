@@ -10,15 +10,15 @@ import java.util.Scanner;
  *
  * @author berge
  */
-public class Convertisseur {
+public class Convertisseur { //Définition de la classe convertisseur 
     int nbConversions; 
     
     
-public Convertisseur () {
+public Convertisseur () { //Définition du construct
     nbConversions = 0 ;
 }
 
-@Override
+@Override //définition de l'écriture 
 public String toString () {
  return "Vous avez fait " + nbConversions + " conversion(s)";
 }
