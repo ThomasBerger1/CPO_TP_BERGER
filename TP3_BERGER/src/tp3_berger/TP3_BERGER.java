@@ -14,7 +14,15 @@ public class TP3_BERGER {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+    //Test de la classe arme :
+            //Arme a = new Arme("arme1",50);
+            //int Att = a.getNivAtt();
+            //System.out.println("L'attaque de " + a.nom + " est de "+Att);
+            //System.out.println(a);
+            
+        
+        
     }
     
 }
