@@ -35,7 +35,7 @@ public class Arme {
 
     @Override
     public String toString(){
-        return "L'arme " + nom + " possède +" + nivAtt + " d'attaque.";
+        return "L'arme " + nom + " possede +" + nivAtt + " d'attaque.";
 
     }
 

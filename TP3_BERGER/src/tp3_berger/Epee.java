@@ -10,7 +10,7 @@ package tp3_berger;
  */
 public class Epee extends Arme{
     
-    int finesse;
+    private int finesse;
 
     public Epee(String unNom, int nivA, int f) {
         super(unNom, nivA);
@@ -18,7 +18,22 @@ public class Epee extends Arme{
             finesse = f;
         }else{
             finesse = 0;
+        }    
+    }
+
+    public void setFinesse(int f) {
+        if (f < 100 && f >= 0){
+            this.finesse = f;
         }
     }
+
+    public int getFinesse() {
+        return finesse;
+    }
     
+    @Override
+    public String toString(){
+        return "Epee {nom = " + nom + " , attaque = " + this.getNivAtt() + " , finesse = " + this.getFinesse() + "}";
+
+    }
 }
