@@ -8,6 +8,9 @@ package tp3_berger;
  *
  * @author berge
  */
+import Armes.Baton;
+import Armes.Arme;
+import Armes.Epee;
 import java.util.ArrayList;
 
 public class TP3_BERGER {
