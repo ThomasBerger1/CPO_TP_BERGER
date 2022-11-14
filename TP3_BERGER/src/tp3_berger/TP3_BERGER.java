@@ -8,6 +8,9 @@ package tp3_berger;
  *
  * @author berge
  */
+import Personnages.Personne;
+import Personnages.Guerrier;
+import Personnages.Magicien;
 import Armes.Baton;
 import Armes.Arme;
 import Armes.Epee;
@@ -27,14 +30,9 @@ public class TP3_BERGER {
             //System.out.println(a);
             
         Epee e1 = new Epee ("Excalibur", 7, 5);
-        //System.out.println(e1);
-        Epee e2 = new Epee ("Durandal", 4, 7);
-        //System.out.println(e2);
-        
+        Epee e2 = new Epee ("Durandal", 4, 7);       
         Baton b1 = new Baton ("Chêne", 4, 5);
-        //System.out.println(b1);
         Baton b2 = new Baton ("Charme", 5, 6);
-        //System.out.println(b2);
         
         ArrayList<Arme> armes = new ArrayList<>();
         armes.add(e1);
@@ -44,6 +42,17 @@ public class TP3_BERGER {
         System.out.println(armes);
         
         
+        Magicien m1 = new Magicien ("Gandalf", 65, true);
+        Magicien m2 = new Magicien ("Garcimore", 44, false);       
+        Guerrier g1 = new Guerrier ("Conan", 78, false);
+        Guerrier g2 = new Guerrier ("Lannister", 45, true);
+        
+        ArrayList<Personne> personnage = new ArrayList<>();
+        personnage.add(m1);
+        personnage.add(m2);
+        personnage.add(g1);
+        personnage.add(g2);
+        System.out.println(personnage);
         
     }
     

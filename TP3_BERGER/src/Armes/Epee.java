@@ -33,7 +33,7 @@ public class Epee extends Arme{
     
     @Override
     public String toString(){
-        return "Epee {nom = " + nom + " , attaque = " + this.getNivAtt() + " , finesse = " + this.getFinesse() + "}";
+        return "Epee {nom : " + nom + " , attaque = " + this.getNivAtt() + " , finesse = " + this.getFinesse() + "}";
 
     }
 }

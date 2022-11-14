@@ -33,7 +33,7 @@ public class Baton extends Arme{
     
     @Override
     public String toString(){
-        return "Baton {nom = " + nom + " , attaque = " + this.getNivAtt() + " , age = " + this.getAge() + "}";
+        return "Baton {nom : " + nom + " , attaque = " + this.getNivAtt() + " , age = " + this.getAge() + "}";
 
     }
 }
