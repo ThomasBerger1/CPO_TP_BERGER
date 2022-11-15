@@ -4,6 +4,9 @@
  */
 package Personnages;
 
+import Armes.Arme;
+import java.util.ArrayList;
+
 /**
  *
  * @author berge
@@ -12,6 +15,8 @@ public class Personne {
     
     String nom;
     private int nivVie;
+    int nbrArmes = 0;
+    ArrayList<Arme> tabArmes;
 
     public Personne(String unNom, int nivV){
         nom = unNom;
@@ -30,5 +35,16 @@ public class Personne {
     public String toString(){
         return "Personne {nom = " + nom + " , niveau de vie = " + nivVie +"}";
     }
+    
+    public boolean ajoutArme(Arme aa){
+        
+        if (nbrArmes <= 5){
+            tabArmes.add(aa);
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
     
 }
