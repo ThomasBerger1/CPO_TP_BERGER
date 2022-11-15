@@ -15,6 +15,11 @@ public class Magicien extends Personne {
     public Magicien(String unNom, int nivV, boolean conf){
         super(unNom, nivV);
         Confirm = conf;
+        aPredilection = "Baton";
+    }
+
+    public String getPredilection() {
+        return aPredilection;
     }
 
     public boolean isConfirm() {
@@ -27,7 +32,10 @@ public class Magicien extends Personne {
     
     @Override
     public String toString(){
-        return "Magicien {nom : " + nom + " , niveau de vie = " + this.getNivVie() + " , confirme : " + Confirm + "}";
+        if (this.getArmeMain() != null){
+               return "Magicien {nom : " + nom + " , niveau de vie = " + this.getNivVie() + " , confirme : " + Confirm + "}\nL'arme "+this.getArmeMain()+" est equipee.";
+        }else{
+            return "Magicien {nom : " + nom + " , niveau de vie = " + this.getNivVie() + " , confirme : " + Confirm + "}";
+        }
     }
-    
 }

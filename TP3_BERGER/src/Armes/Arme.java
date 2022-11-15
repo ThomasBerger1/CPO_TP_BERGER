@@ -33,6 +33,10 @@ public class Arme {
         }
     }
 
+    public String getNom() {
+        return nom;
+    }
+
     @Override
     public String toString(){
         return "L'arme " + nom + " possede +" + nivAtt + " d'attaque.";

@@ -28,7 +28,7 @@ public class TP3_BERGER {
             //int Att = a.getNivAtt();
             //System.out.println("L'attaque de " + a.nom + " est de "+Att);
             //System.out.println(a);
-            
+        /** TEST GLOBAL AVANT 3.2   
         Epee e1 = new Epee ("Excalibur", 7, 5);
         Epee e2 = new Epee ("Durandal", 4, 7);       
         Baton b1 = new Baton ("Chêne", 4, 5);
@@ -54,6 +54,38 @@ public class TP3_BERGER {
         personnage.add(g2);
         System.out.println(personnage);
         
+        m2.ajoutArme(b1);
+        m2.equipArme("Chêne");
+        System.out.println(m2);
+        System.out.println(m2.predilection());
+        **/
+        
+        //Tests - Partie 3.2
+        
+        Guerrier g1 = new Guerrier ("Lannister", 45, true);
+        Magicien m1 = new Magicien ("Gandalf", 65, true);
+            ArrayList<Personne> personnage = new ArrayList<>();
+            personnage.add(m1);
+            personnage.add(g1);
+        Epee e1 = new Epee ("Excalibur", 20, 5);
+        Epee e2 = new Epee ("Durandal", 10, 7);  
+        Epee e3 = new Epee ("Aiguille", 8, 10);  
+        Baton b1 = new Baton ("Chêne", 3, 8);
+        Baton b2 = new Baton ("Charme", 5, 6);
+        Baton b3 = new Baton ("Bois", 8, 4);
+        
+        g1.ajoutArme(e1);
+        g1.ajoutArme(b2);
+        g1.ajoutArme(e2);
+        g1.equipArme("Excalibur");
+        
+        m1.ajoutArme(e3);
+        m1.ajoutArme(b1);
+        m1.ajoutArme(b3);
+        
+        System.out.println(m1.predilection());
+        
+        System.out.println(personnage);
     }
     
 }

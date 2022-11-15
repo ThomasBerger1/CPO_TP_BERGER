@@ -15,6 +15,11 @@ public class Guerrier extends Personne {
     public Guerrier(String unNom, int nivV, boolean dada) {
         super(unNom, nivV);
         aCheval = dada;
+        aPredilection = "Epee";
+    }
+
+    public String getPredilection() {
+        return aPredilection;
     }
 
     public boolean isaCheval() {
@@ -27,7 +32,10 @@ public class Guerrier extends Personne {
     
     @Override
     public String toString(){
-        return "Guerrier {nom : " + nom + " , niveau de vie = " + this.getNivVie() + " , a cheval : " + aCheval + "}";
+        if (this.getArmeMain() != null){
+               return "Guerrier {nom : " + nom + " , niveau de vie = " + this.getNivVie() + " , a cheval : " + aCheval + "}\nL'arme "+this.getArmeMain() +" est equipee.";
+        }else{
+            return "Guerrier {nom : " + nom + " , niveau de vie = " + this.getNivVie() + " , a cheval : " + aCheval + "}";
+        }
     }
-    
 }
