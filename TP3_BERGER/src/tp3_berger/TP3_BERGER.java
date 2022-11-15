@@ -21,7 +21,7 @@ public class TP3_BERGER {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Throwable {
         
         //Test de la classe arme :
             //Arme a = new Arme("arme1",50);
@@ -94,9 +94,9 @@ public class TP3_BERGER {
         System.out.println(Guerrier.getNbGuerriers());
         System.out.println(Magicien.getNbMagiciens());
         
-        //m2 = null;        
-        //System.gc();
-        //System.finalize();
+        m2 = null;        
+        System.gc();
+        System.runFinalization();
         
         
                 
