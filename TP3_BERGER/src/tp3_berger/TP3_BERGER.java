@@ -86,6 +86,20 @@ public class TP3_BERGER {
         System.out.println(m1.predilection());
         
         System.out.println(personnage);
+        
+        // Test du 4.1
+        Magicien m2 = new Magicien ("Garcimore", 44, false);
+        
+        System.out.println(Personne.getNbPersonnages());
+        System.out.println(Guerrier.getNbGuerriers());
+        System.out.println(Magicien.getNbMagiciens());
+        
+        //m2 = null;        
+        //System.gc();
+        //System.finalize();
+        
+        
+                
     }
     
 }
